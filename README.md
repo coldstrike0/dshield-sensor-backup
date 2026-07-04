@@ -57,7 +57,7 @@ sudo rm -rf /tmp/verify_check
 sudo umount /mnt/usb
 ```
 
-*Reboot or reinstall the sensor.*
+*Reboot and reinstall the sensor.*
 
 ## Step 7 — After rebuild: verify storage integrity
 
