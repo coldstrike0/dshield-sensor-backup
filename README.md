@@ -1,6 +1,6 @@
 # Full Backup & Restore Procedure
 
-Hash-verified backup of all attacker-generated data on a DShield/Cowrie sensor before a reboot or reinstallation.
+Hash-verified backup of all attacker-generated data on a DShield/Cowrie sensor before reinstallation.
 
 Preserves: web logs (`/srv/log/`), Cowrie logs (`/srv/cowrie/var/log/cowrie/`), TTY sessions (`/srv/cowrie/var/lib/cowrie/tty/`), and attacker-uploaded files (`/srv/cowrie/var/lib/cowrie/downloads/`).
 
@@ -65,8 +65,6 @@ sudo umount /mnt/usb
 sudo mount /dev/sda1 /mnt/usb
 sha256sum -c /mnt/usb/sensor_backup_2026-06-27.sha256
 ```
-
-(Use the actual dated filename — `$(date +%F)` would resolve to today's date, not the backup's.)
 
 ## Step 8 — Extract and verify restore integrity
 
