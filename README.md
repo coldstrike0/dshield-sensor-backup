@@ -73,6 +73,7 @@ sudo mkdir -p /tmp/restore_check
 sudo tar -xzf /mnt/usb/<filename>.tar.gz -C /tmp/restore_check
 cd /tmp/restore_check
 sudo sha256sum -c /mnt/usb/source_hashes.sha256
+ls -laR
 ```
 
 All `OK` = the restored data is byte-for-byte identical to what was live before the wipe. Move the verified directories back into place as needed.
